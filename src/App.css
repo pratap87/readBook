@@ -9,7 +9,6 @@ body,
 
 .header {
     background: white;
-    border-bottom: 1px solid pink;
     display: flex;
     color: grey;
     justify-content: space-around;
@@ -57,7 +56,8 @@ Link h2 {
 }
 
 .bookshelf {
-    padding: 0 10px 20px;
+    background-color: #FAABAD;
+    margin-top: -40px;
 }
 
 @media (min-width: 600px) {
@@ -224,4 +224,82 @@ button:active {
     padding: 20px 10px 0;
     text-align: center;
     font-size: 0.8em;
+}
+
+.bookshelf-title {
+    border: none;
+    color: whitesmoke;
+    background-color: #faabad;
+}
+
+.book {
+    background-color: #90D3E0;
+    display: flex;
+    -webkit-box-shadow: -1px 2px 9px -2px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: -1px 2px 9px -2px rgba(0, 0, 0, 0.67);
+    box-shadow: -1px 2px 9px -2px rgba(0, 0, 0, 0.67);
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.book-top {
+    margin-left: 30px;
+}
+
+.book-bottom {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    color: white;
+}
+
+.book-title {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.book-authors {
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.landing {
+    display: flex;
+}
+
+.landbox {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 100px;
+}
+
+.landbox h1 {
+    color: grey;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.landbox p {
+    color: grey;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    background-color: #FAABAD;
+    color: white;
+}
+
+.landimage {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
 }

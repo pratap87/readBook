@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
+ import  StarRatings from "react-star-ratings"
 class Book extends Component {
 
     static propTypes = {
@@ -34,10 +34,26 @@ class Book extends Component {
                             </select>
                         </div>
                     </div>
-                    <div className="book-title">{book.title}
-                        <br/>
-                     <a className="glink" href={book.canonicalVolumeLink}><button className="gbtn" >See This Book</button></a>
-                    </div>
+                    <div className="book-bottom">
+                        <div className="book-title">{book.title}
+                        
+                        
+                    
+                        </div>
+                        <div>
+                            <StarRatings
+                                
+                  rating={4}
+                  starRatedColor="#FFC850"
+                  starHoverColor="#FFC850"
+                  changeRating={() => console.log("===")}
+                  numberOfStars={5}
+                  name="rating"
+                  starSpacing="3px"
+                  starDimension="15px"
+                />
+                        </div>
+                        
                     <div className="book-authors">
                         {
 
@@ -48,8 +64,12 @@ class Book extends Component {
 
                         }
                     </div>
+                    <div className="book-btn">
+                         <a className="glink" href={book.canonicalVolumeLink}><button className="gbtn" >See This Book</button></a>
+                    </div>
 
-                </div>
+                    </div>
+                    </div>
             </li>
         )
 
